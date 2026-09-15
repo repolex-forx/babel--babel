@@ -1,0 +1,25 @@
+{
+  "commit_sha": "b2376757d7a42c6785b24091144ef7f00df7d436",
+  "completed_files": [],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/babel/babel/lsp/b2376757d7a42c6785b24091144ef7f00df7d436",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz",
+    "call_sites": 103880,
+    "import_statements": 5877,
+    "call_targets_resolved": 6996,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 2836,
+    "extends_clauses": 768,
+    "implements_clauses": 3,
+    "import_modules_denormalized": 5880,
+    "import_symbols_denormalized": 0,
+    "extends_class_denormalized": 504,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14406
+}

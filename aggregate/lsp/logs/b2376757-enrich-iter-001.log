@@ -1,0 +1,15 @@
+[2026-09-15T17:30:38Z] === ENRICH ITERATION 1 START | repo=babel/babel sha=b2376757 ===
+[2026-09-15T17:30:38Z] [iter=1] PHASE START: enrich repo=babel/babel sha=b2376757 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b2376757-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz
+[2026-09-15T17:31:17Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=85 MB
+[2026-09-15T17:33:40Z] [iter=1] AST store loaded triples=11988611 load_secs=138 mem_mb=1148 MB
+[2026-09-15T17:33:40Z] [iter=1] Step 2: Finding LSP targets mem_mb=1148 MB
+[2026-09-15T17:34:04Z] [iter=1] LSP targets found call_sites=103880 imports=5877 extends=768 implements=3 secs=24
+[2026-09-15T17:34:18Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1148 MB
+[2026-09-15T17:35:41Z] [iter=1] Position index built positions=800545 nodes_with_types=929189 secs=82 mem_mb=1965 MB
+[2026-09-15T17:35:41Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1965 MB already_completed_types=[] already_completed_files=0
+[2026-09-15T17:35:41Z] [iter=1] Resolving target type target_type=call_site count=103880
+[2026-09-15T17:35:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=0 resolved=0 errors=0 current=.yarn/releases/yarn-2.4.1.cjs
+[2026-09-15T21:30:45Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=0 new_files_this_iter=0 mem_mb=2103 MB
+[2026-09-15T21:30:45Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz triples=111681
+[2026-09-15T21:30:47Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-09-15T21:30:47Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14407 elapsed_min=240.1 files_completed=0
