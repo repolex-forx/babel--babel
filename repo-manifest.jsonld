@@ -4041,8 +4041,9 @@
     {
       "@id": "https://repolex.ai/r/babel/babel/commit/e82e43ca335aa7aabbaf2689775286af8c7b756a",
       "git:hexsha": "e82e43ca335aa7aabbaf2689775286af8c7b756a",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v7.15.5"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v7.15.5",
+      "repolex:parsedAt": "2026-09-15T12:28:57.674360+00:00"
     },
     {
       "@id": "https://repolex.ai/r/babel/babel/commit/34a27e46f8fb63d02ed218da628e402ccc1ea42a",
