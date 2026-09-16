@@ -1,0 +1,18 @@
+[2026-09-16T02:18:02Z] === ENRICH ITERATION 3 START | repo=babel/babel sha=b2376757 ===
+[2026-09-16T02:18:02Z] [iter=3] PHASE START: enrich repo=babel/babel sha=b2376757 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b2376757-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz
+[2026-09-16T02:18:30Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=84 MB
+[2026-09-16T02:20:47Z] [iter=3] AST store loaded triples=11988611 load_secs=132 mem_mb=1149 MB
+[2026-09-16T02:20:47Z] [iter=3] Step 2: Finding LSP targets mem_mb=1149 MB
+[2026-09-16T02:21:11Z] [iter=3] LSP targets found call_sites=103880 imports=5877 extends=768 implements=3 secs=24
+[2026-09-16T02:21:16Z] [iter=3] Loaded checkpoint partial graph triples=112191
+[2026-09-16T02:21:30Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1149 MB
+[2026-09-16T02:22:49Z] [iter=3] Position index built positions=800545 nodes_with_types=929189 secs=80 mem_mb=2330 MB
+[2026-09-16T02:22:49Z] [iter=3] Step 3: Starting LSP resolution mem_mb=2330 MB already_completed_types=[] already_completed_files=0
+[2026-09-16T02:22:49Z] [iter=3] Resolving target type target_type=call_site count=103880
+[2026-09-16T02:22:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=4.8 files_done=0 resolved=0 errors=0 current=.yarn/releases/yarn-2.4.1.cjs
+[2026-09-16T06:15:30Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=237.5 files_done=1 resolved=11 errors=2852 current=packages/babel-plugin-proposal-class-properties/test/fixtures/private/optional-chain-optional-member-call/output.js
+[2026-09-16T06:17:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=239.1 files_done=2 resolved=11 errors=2872 current=packages/babel-plugin-proposal-optional-chaining/test/fixtures/assumption-noDocumentAll/cast-to-boolean/exec.js
+[2026-09-16T06:18:07Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=2 new_files_this_iter=2 mem_mb=2361 MB
+[2026-09-16T06:18:07Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz triples=112574
+[2026-09-16T06:18:09Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-09-16T06:18:09Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=14405 elapsed_min=240.1 files_completed=2
