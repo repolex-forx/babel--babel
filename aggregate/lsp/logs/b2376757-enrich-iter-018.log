@@ -1,0 +1,49 @@
+[2026-09-17T11:00:59Z] === ENRICH ITERATION 18 START | repo=babel/babel sha=b2376757 ===
+[2026-09-17T11:00:59Z] [iter=18] PHASE START: enrich repo=babel/babel sha=b2376757 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b2376757-enrich-iter-018.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz
+[2026-09-17T11:01:39Z] [iter=18] Step 1: Loading AST into disk-backed store mem_mb=87 MB
+[2026-09-17T11:03:53Z] [iter=18] AST store loaded triples=11988611 load_secs=129 mem_mb=1129 MB
+[2026-09-17T11:03:53Z] [iter=18] Step 2: Finding LSP targets mem_mb=1129 MB
+[2026-09-17T11:04:16Z] [iter=18] LSP targets found call_sites=103880 imports=5877 extends=768 implements=3 secs=23
+[2026-09-17T11:04:30Z] [iter=18] Loaded checkpoint partial graph triples=287779
+[2026-09-17T11:04:45Z] [iter=18] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1245 MB
+[2026-09-17T11:05:56Z] [iter=18] Position index built positions=800545 nodes_with_types=929189 secs=71 mem_mb=2647 MB
+[2026-09-17T11:05:56Z] [iter=18] Step 3: Starting LSP resolution mem_mb=2647 MB already_completed_types=[] already_completed_files=5747
+[2026-09-17T11:05:56Z] [iter=18] Resolving target type target_type=call_site count=103880
+[2026-09-17T11:05:59Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=5.0 files_done=0 resolved=0 errors=0 current=packages/babel-plugin-proposal-partial-application/test/fixtures/general/bound-method/input.js
+[2026-09-17T11:06:33Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=15 resolved=2 errors=5 current=packages/babel-plugin-transform-block-scoping/test/fixtures/tdz/hoisted-function/input.js
+[2026-09-17T11:07:03Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=32 resolved=5 errors=10 current=packages/babel-plugin-proposal-nullish-coalescing-operator/test/fixtures/nullish-coalescing/transform-in-default-param/output.js
+[2026-09-17T11:07:34Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=60 resolved=6 errors=15 current=packages/babel-cli/index.js
+[2026-09-17T11:08:04Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=82 resolved=7 errors=20 current=packages/babel-parser/test/fixtures/experimental/pipeline-operator/hack-percent-proposal-do-transform-for-classic-loop-and-topic-in-loop-head/input.js
+[2026-09-17T11:08:36Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=7.6 files_done=97 resolved=8 errors=25 current=packages/babel-parser/test/fixtures/experimental/pipeline-operator/smart-proposal-class-expression-with-decorators/input.js
+[2026-09-17T11:09:06Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=8.1 files_done=109 resolved=8 errors=30 current=packages/babel-plugin-transform-react-jsx/test/fixtures/react-automatic/should-allow-constructor-as-prop/output.mjs
+[2026-09-17T11:09:40Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=131 resolved=12 errors=36 current=packages/babel-preset-env/test/fixtures/corejs2/usage-typed-array-static/input.mjs
+[2026-09-17T11:10:11Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=148 resolved=17 errors=41 current=packages/babel-node/test/fixtures/cli/-b/in-files/index.js
+[2026-09-17T11:31:24Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=30.4 files_done=165 resolved=21 errors=291 current=packages/babel-types/src/asserts/generated/index.ts
+[2026-09-17T11:56:39Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=55.7 files_done=166 resolved=26 errors=587 current=packages/babel-helper-create-class-features-plugin/src/index.ts
+[2026-09-17T12:00:34Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=59.6 files_done=167 resolved=53 errors=633 current=packages/babel-traverse/src/scope/index.ts
+[2026-09-17T12:21:40Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=80.7 files_done=168 resolved=99 errors=868 current=packages/babel-generator/src/generators/classes.ts
+[2026-09-17T12:27:29Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=86.5 files_done=169 resolved=99 errors=936 current=packages/babel-helper-module-transforms/src/normalize-and-load-metadata.ts
+[2026-09-17T12:34:42Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=93.7 files_done=170 resolved=132 errors=1021 current=packages/babel-generator/src/generators/statements.ts
+[2026-09-17T12:44:50Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=103.8 files_done=171 resolved=132 errors=1140 current=packages/babel-traverse/src/path/evaluation.ts
+[2026-09-17T12:52:40Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=111.7 files_done=172 resolved=138 errors=1232 current=packages/babel-traverse/src/path/comments.ts
+[2026-09-17T12:53:10Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=112.2 files_done=173 resolved=140 errors=1238 current=packages/babel-helper-replace-supers/src/index.ts
+[2026-09-17T12:58:31Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=117.5 files_done=174 resolved=142 errors=1301 current=packages/babel-types/src/validators/generated/index.ts
+[2026-09-17T13:23:33Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=142.6 files_done=175 resolved=146 errors=1596 current=packages/babel-plugin-transform-runtime/src/index.ts
+[2026-09-17T13:25:00Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=144.0 files_done=176 resolved=155 errors=1613 current=packages/babel-helper-module-imports/src/import-injector.ts
+[2026-09-17T13:32:07Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=151.1 files_done=177 resolved=162 errors=1697 current=packages/babel-helper-fixtures/src/index.ts
+[2026-09-17T13:34:44Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=153.7 files_done=178 resolved=177 errors=1728 current=packages/babel-plugin-bugfix-v8-spread-parameters-in-optional-chaining/src/util.ts
+[2026-09-17T13:35:45Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=154.8 files_done=179 resolved=178 errors=1740 current=packages/babel-cli/src/babel/options.ts
+[2026-09-17T13:46:21Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=165.4 files_done=181 resolved=243 errors=1865 current=packages/babel-generator/src/generators/modules.ts
+[2026-09-17T13:52:51Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=171.9 files_done=182 resolved=247 errors=1941 current=packages/babel-helper-create-class-features-plugin/src/misc.ts
+[2026-09-17T13:55:57Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=175.0 files_done=183 resolved=250 errors=1977 current=packages/babel-traverse/src/path/index.ts
+[2026-09-17T13:56:48Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=175.8 files_done=184 resolved=260 errors=1987 current=packages/babel-traverse/src/path/replacement.ts
+[2026-09-17T14:03:41Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=182.7 files_done=185 resolved=265 errors=2068 current=packages/babel-traverse/src/path/family.ts
+[2026-09-17T14:10:29Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=189.5 files_done=186 resolved=298 errors=2148 current=packages/babel-traverse/src/path/inference/inferers.ts
+[2026-09-17T14:15:27Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=194.5 files_done=187 resolved=303 errors=2206 current=packages/babel-types/src/definitions/flow.ts
+[2026-09-17T14:35:02Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=214.0 files_done=188 resolved=303 errors=2438 current=packages/babel-cli/src/babel/dir.ts
+[2026-09-17T14:37:03Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=216.1 files_done=189 resolved=311 errors=2462 current=packages/babel-traverse/src/path/conversion.ts
+[2026-09-17T14:46:48Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=225.8 files_done=190 resolved=336 errors=2577 current=packages/babel-plugin-transform-spread/test/fixtures/call-context/ts-type-cast/input.ts
+[2026-09-17T15:01:41Z] [iter=18] CHECKPOINT TRIGGERED elapsed_min=240.7 files_completed=5938 new_files_this_iter=191 mem_mb=2673 MB
+[2026-09-17T15:01:41Z] [iter=18] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz triples=301494
+[2026-09-17T15:01:49Z] [iter=18] Checkpoint written, exiting with code 7
+[2026-09-17T15:01:49Z] [iter=18] PHASE END: enrich (checkpointed) elapsed_s=14442 elapsed_min=240.7 files_completed=5938
