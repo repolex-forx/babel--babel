@@ -1,0 +1,39 @@
+[2026-09-17T09:13:25Z] === ENRICH ITERATION 16 START | repo=babel/babel sha=b2376757 ===
+[2026-09-17T09:13:25Z] [iter=16] PHASE START: enrich repo=babel/babel sha=b2376757 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b2376757-enrich-iter-016.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz
+[2026-09-17T09:13:59Z] [iter=16] Step 1: Loading AST into disk-backed store mem_mb=87 MB
+[2026-09-17T09:16:22Z] [iter=16] AST store loaded triples=11988611 load_secs=137 mem_mb=1127 MB
+[2026-09-17T09:16:22Z] [iter=16] Step 2: Finding LSP targets mem_mb=1127 MB
+[2026-09-17T09:16:44Z] [iter=16] LSP targets found call_sites=103880 imports=5877 extends=768 implements=3 secs=23
+[2026-09-17T09:16:58Z] [iter=16] Loaded checkpoint partial graph triples=283293
+[2026-09-17T09:17:11Z] [iter=16] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1156 MB
+[2026-09-17T09:18:30Z] [iter=16] Position index built positions=800545 nodes_with_types=929189 secs=78 mem_mb=2558 MB
+[2026-09-17T09:18:30Z] [iter=16] Step 3: Starting LSP resolution mem_mb=2558 MB already_completed_types=[] already_completed_files=4747
+[2026-09-17T09:18:30Z] [iter=16] Resolving target type target_type=call_site count=103880
+[2026-09-17T09:18:32Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=0 resolved=0 errors=0 current=packages/babel-preset-env/test/fixtures/modules/modules-cjs/output.js
+[2026-09-17T09:19:03Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=36 resolved=12 errors=5 current=packages/babel-plugin-proposal-private-methods/test/fixtures/private-method-privateFieldsAsProperties/generator/input.js
+[2026-09-17T09:19:34Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=59 resolved=15 errors=10 current=packages/babel-preset-env/test/fixtures/corejs3-babel-7/usage-typed-array-edge-13/output.mjs
+[2026-09-17T09:20:06Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=6.7 files_done=76 resolved=19 errors=16 current=packages/babel-parser/test/fixtures/experimental/template-literal-invalid-escapes-tagged/53/input.js
+[2026-09-17T09:20:42Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=7.3 files_done=94 resolved=25 errors=22 current=packages/babel-plugin-proposal-private-methods/test/fixtures/private-static-method-privateFieldsAsProperties/this/input.js
+[2026-09-17T09:21:21Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=110 resolved=26 errors=29 current=packages/babel-plugin-transform-modules-amd/test/fixtures/amd/export-default-10/input.mjs
+[2026-09-17T09:21:51Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=8.4 files_done=128 resolved=29 errors=34 current=packages/babel-plugin-proposal-pipeline-operator/test/fixtures/smart/pipe-body-with-arrow-function-without-nested-pipe/input.js
+[2026-09-17T09:22:27Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=144 resolved=32 errors=40 current=packages/babel-traverse/test/fixtures/rename/method-computed-key-5/input.js
+[2026-09-17T09:22:57Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=9.5 files_done=177 resolved=40 errors=45 current=packages/babel-plugin-transform-regenerator/test/fixtures/regression/4219/input.js
+[2026-09-17T09:23:32Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=192 resolved=44 errors=52 current=packages/babel-preset-env/test/fixtures/dynamic-import-babel-7/auto-esm-supported-import-unsupported/output.mjs
+[2026-09-17T09:24:08Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=204 resolved=46 errors=59 current=packages/babel-plugin-transform-classes/test/fixtures/loose/literal-key/output.js
+[2026-09-17T09:24:38Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=11.2 files_done=241 resolved=50 errors=64 current=packages/babel-parser/test/fixtures/es2020/dynamic-import/top-level/input.js
+[2026-09-17T09:25:13Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=11.8 files_done=271 resolved=53 errors=70 current=packages/babel-plugin-proposal-dynamic-import/test/fixtures/amd/no-interop/input.js
+[2026-09-17T09:25:46Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=12.3 files_done=302 resolved=59 errors=76 current=packages/babel-plugin-transform-runtime/test/fixtures/regression/issue-9753-webpack-require-template-compatibility/input.js
+[2026-09-17T09:26:18Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=12.9 files_done=321 resolved=60 errors=82 current=packages/babel-plugin-transform-modules-systemjs/test/fixtures/systemjs/module-name/output.mjs
+[2026-09-17T09:26:49Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=13.4 files_done=329 resolved=62 errors=88 current=packages/babel-plugin-transform-unicode-escapes/test/index.js
+[2026-09-17T09:27:20Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=13.9 files_done=347 resolved=67 errors=94 current=packages/babel-preset-env/test/fixtures/preset-options/rhino-1_7_13/output.mjs
+[2026-09-17T09:27:53Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=14.5 files_done=359 resolved=71 errors=100 current=packages/babel-plugin-transform-classes/test/fixtures/loose/derived-constructor-must-call-super/output.js
+[2026-09-17T09:28:25Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=15.0 files_done=372 resolved=75 errors=106 current=packages/babel-plugin-proposal-class-static-block/test/fixtures/integration-loose/in-class-heritage/exec.js
+[2026-09-17T09:28:57Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=15.5 files_done=413 resolved=84 errors=112 current=packages/babel-parser/test/fixtures/es2015/uncategorised/312/input.js
+[2026-09-17T09:29:31Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=441 resolved=89 errors=118 current=packages/babel-preset-env/test/fixtures/loose-class-features-precedence/properties-not-loose-preset-loose/output.js
+[2026-09-17T09:30:05Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=16.7 files_done=459 resolved=91 errors=124 current=packages/babel-plugin-transform-for-of/test/fixtures/assumption-iterableIsArray/for-of-import-es2015/output.mjs
+[2026-09-17T09:30:43Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=17.3 files_done=483 resolved=95 errors=131 current=packages/babel-parser/test/fixtures/experimental/pipeline-operator/smart-proposal-nested-pipelines-with-arrow-function-with-required-topics/input.js
+[2026-09-17T09:31:16Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=17.8 files_done=499 resolved=100 errors=137 current=packages/babel-parser/test/fixtures/esprima/es2015-spread-element/invalid-new-spreads/input.js
+[2026-09-17T09:31:16Z] [iter=16] CHECKPOINT TRIGGERED elapsed_min=17.8 files_completed=5247 new_files_this_iter=500 mem_mb=2563 MB
+[2026-09-17T09:31:16Z] [iter=16] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz triples=285594
+[2026-09-17T09:31:23Z] [iter=16] Checkpoint written, exiting with code 7
+[2026-09-17T09:31:23Z] [iter=16] PHASE END: enrich (checkpointed) elapsed_s=1071 elapsed_min=17.8 files_completed=5247
