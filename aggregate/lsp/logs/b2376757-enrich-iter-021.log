@@ -1,0 +1,22 @@
+[2026-09-17T22:59:12Z] === ENRICH ITERATION 21 START | repo=babel/babel sha=b2376757 ===
+[2026-09-17T22:59:12Z] [iter=21] PHASE START: enrich repo=babel/babel sha=b2376757 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b2376757-enrich-iter-021.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz
+[2026-09-17T22:59:41Z] [iter=21] Step 1: Loading AST into disk-backed store mem_mb=87 MB
+[2026-09-17T23:01:57Z] [iter=21] AST store loaded triples=11988611 load_secs=131 mem_mb=1138 MB
+[2026-09-17T23:01:57Z] [iter=21] Step 2: Finding LSP targets mem_mb=1138 MB
+[2026-09-17T23:02:19Z] [iter=21] LSP targets found call_sites=103880 imports=5877 extends=768 implements=3 secs=22
+[2026-09-17T23:02:35Z] [iter=21] Loaded checkpoint partial graph triples=335923
+[2026-09-17T23:02:48Z] [iter=21] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1449 MB
+[2026-09-17T23:04:06Z] [iter=21] Position index built positions=800545 nodes_with_types=929189 secs=78 mem_mb=2877 MB
+[2026-09-17T23:04:06Z] [iter=21] Step 3: Starting LSP resolution mem_mb=2877 MB already_completed_types=['call_site'] already_completed_files=6470
+[2026-09-17T23:04:06Z] [iter=21] Skipping target type (completed in previous iteration) target_type=call_site
+[2026-09-17T23:04:06Z] [iter=21] Resolving target type target_type=import_statement count=5877
+[2026-09-17T23:04:08Z] [iter=21] HEARTBEAT target_type=import_statement elapsed_min=4.9 files_done=0 resolved=0 errors=0 current=packages/babel-parser/test/fixtures/esprima/es2015-import-declaration/invalid-import-missing-comma/input.js
+[2026-09-17T23:04:18Z] [iter=21] Target type resolved target_type=import_statement resolved=94 errors=0 secs=12 mem_mb=2879 MB
+[2026-09-17T23:04:18Z] [iter=21] Resolving target type target_type=extends_clause count=768
+[2026-09-17T23:04:21Z] [iter=21] Target type resolved target_type=extends_clause resolved=279 errors=0 secs=4 mem_mb=2880 MB
+[2026-09-17T23:04:21Z] [iter=21] Resolving target type target_type=implements_clause count=3
+[2026-09-17T23:04:23Z] [iter=21] Target type resolved target_type=implements_clause resolved=3 errors=0 secs=1 mem_mb=2880 MB
+[2026-09-17T23:05:42Z] [iter=21] Step 5: Writing final enrichment file triples=717798
+[2026-09-17T23:05:59Z] [iter=21] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz size_kb=19877
+[2026-09-17T23:05:59Z] [iter=21] Checkpoint cleared (enrichment complete)
+[2026-09-17T23:05:59Z] [iter=21] PHASE END: enrich elapsed_s=406 elapsed_min=6.8 total_triples=717798
