@@ -1,0 +1,122 @@
+[2026-09-17T19:27:58Z] === ENRICH ITERATION 20 START | repo=babel/babel sha=b2376757 ===
+[2026-09-17T19:27:58Z] [iter=20] PHASE START: enrich repo=babel/babel sha=b2376757 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b2376757-enrich-iter-020.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz
+[2026-09-17T19:28:31Z] [iter=20] Step 1: Loading AST into disk-backed store mem_mb=87 MB
+[2026-09-17T19:30:50Z] [iter=20] AST store loaded triples=11988611 load_secs=134 mem_mb=1145 MB
+[2026-09-17T19:30:50Z] [iter=20] Step 2: Finding LSP targets mem_mb=1145 MB
+[2026-09-17T19:31:13Z] [iter=20] LSP targets found call_sites=103880 imports=5877 extends=768 implements=3 secs=24
+[2026-09-17T19:31:29Z] [iter=20] Loaded checkpoint partial graph triples=313830
+[2026-09-17T19:31:43Z] [iter=20] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1327 MB
+[2026-09-17T19:33:02Z] [iter=20] Position index built positions=800545 nodes_with_types=929189 secs=79 mem_mb=2775 MB
+[2026-09-17T19:33:02Z] [iter=20] Step 3: Starting LSP resolution mem_mb=2775 MB already_completed_types=[] already_completed_files=5970
+[2026-09-17T19:33:02Z] [iter=20] Resolving target type target_type=call_site count=103880
+[2026-09-17T19:33:05Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=0 resolved=0 errors=0 current=packages/babel-types/src/definitions/typescript.ts
+[2026-09-17T19:47:13Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=19.2 files_done=1 resolved=0 errors=172 current=packages/babel-cli/src/babel-external-helpers.ts
+[2026-09-17T19:56:17Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=28.3 files_done=3 resolved=27 errors=283 current=packages/babel-traverse/src/path/lib/hoister.ts
+[2026-09-17T19:58:49Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=30.8 files_done=4 resolved=36 errors=314 current=packages/babel-core/src/parser/util/missing-plugin-helper.ts
+[2026-09-17T20:03:04Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=35.1 files_done=6 resolved=36 errors=366 current=packages/babel-helper-transform-fixture-test-runner/src/index.ts
+[2026-09-17T20:06:34Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=38.6 files_done=7 resolved=42 errors=409 current=packages/babel-template/src/literal.ts
+[2026-09-17T20:07:09Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=39.2 files_done=8 resolved=50 errors=416 current=packages/babel-preset-env/src/filter-items.ts
+[2026-09-17T20:14:59Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=47.0 files_done=10 resolved=87 errors=512 current=packages/babel-helper-compilation-targets/src/pretty.ts
+[2026-09-17T20:17:17Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=49.3 files_done=12 resolved=106 errors=540 current=packages/babel-generator/src/buffer.ts
+[2026-09-17T20:18:46Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=50.8 files_done=13 resolved=124 errors=558 current=packages/babel-core/src/config/full.ts
+[2026-09-17T20:22:17Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=54.3 files_done=14 resolved=145 errors=601 current=packages/babel-helper-module-transforms/src/index.ts
+[2026-09-17T20:27:31Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=59.5 files_done=15 resolved=171 errors=665 current=packages/babel-helper-explode-assignable-expression/src/index.ts
+[2026-09-17T20:30:09Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=62.2 files_done=16 resolved=173 errors=697 current=packages/babel-template/src/parse.ts
+[2026-09-17T20:31:47Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=63.8 files_done=17 resolved=180 errors=717 current=packages/babel-helper-module-imports/src/import-builder.ts
+[2026-09-17T20:34:50Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=66.9 files_done=18 resolved=183 errors=754 current=packages/babel-traverse/src/visitors.ts
+[2026-09-17T20:36:28Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=68.5 files_done=19 resolved=203 errors=774 current=packages/babel-traverse/src/scope/lib/renamer.ts
+[2026-09-17T20:38:32Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=70.6 files_done=20 resolved=203 errors=799 current=packages/babel-cli/src/babel/file.ts
+[2026-09-17T20:39:50Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=71.9 files_done=21 resolved=218 errors=815 current=packages/babel-plugin-transform-classes/src/transformClass.ts
+[2026-09-17T20:52:07Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=84.1 files_done=22 resolved=247 errors=963 current=packages/babel-types/src/converters/gatherSequenceExpressions.ts
+[2026-09-17T20:53:35Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=85.6 files_done=23 resolved=256 errors=981 current=packages/babel-plugin-transform-typescript/src/enum.ts
+[2026-09-17T20:55:48Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=87.8 files_done=24 resolved=259 errors=1008 current=packages/babel-core/src/config/caching.ts
+[2026-09-17T20:59:44Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=91.8 files_done=25 resolved=269 errors=1056 current=packages/babel-core/src/config/validation/options.ts
+[2026-09-17T21:01:47Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=26 resolved=276 errors=1081 current=packages/babel-helper-create-class-features-plugin/src/decorators.ts
+[2026-09-17T21:06:08Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=98.2 files_done=27 resolved=288 errors=1134 current=packages/babel-template/src/builder.ts
+[2026-09-17T21:07:56Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=100.0 files_done=28 resolved=295 errors=1156 current=packages/babel-generator/src/generators/types.ts
+[2026-09-17T21:13:40Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=105.7 files_done=29 resolved=298 errors=1226 current=packages/babel-generator/src/index.ts
+[2026-09-17T21:17:22Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=109.4 files_done=31 resolved=314 errors=1271 current=packages/babel-helper-compilation-targets/src/filter-items.ts
+[2026-09-17T21:19:10Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=111.2 files_done=32 resolved=315 errors=1293 current=packages/babel-helper-create-regexp-features-plugin/src/features.ts
+[2026-09-17T21:20:19Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=112.4 files_done=35 resolved=331 errors=1307 current=packages/babel-traverse/src/path/inference/index.ts
+[2026-09-17T21:22:12Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=114.2 files_done=36 resolved=334 errors=1330 current=packages/babel-parser/test/fixtures/typescript/types/import-type-dynamic-errors/input.ts
+[2026-09-17T21:23:03Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=115.1 files_done=38 resolved=334 errors=1340 current=packages/babel-core/src/transformation/block-hoist-plugin.ts
+[2026-09-17T21:23:57Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=116.0 files_done=40 resolved=338 errors=1351 current=packages/babel-helper-compilation-targets/src/index.ts
+[2026-09-17T21:26:04Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=118.1 files_done=41 resolved=360 errors=1377 current=packages/babel-traverse/src/index.ts
+[2026-09-17T21:26:44Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=118.8 files_done=42 resolved=362 errors=1385 current=packages/babel-helper-validator-option/src/validator.ts
+[2026-09-17T21:27:18Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=119.3 files_done=44 resolved=365 errors=1392 current=packages/babel-helper-get-function-arity/src/index.ts
+[2026-09-17T21:28:22Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=120.4 files_done=46 resolved=372 errors=1405 current=packages/babel-generator/src/generators/base.ts
+[2026-09-17T21:30:49Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=122.8 files_done=47 resolved=374 errors=1435 current=packages/babel-parser/test/fixtures/typescript/class/expression-extends-implements/input.ts
+[2026-09-17T21:31:20Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=123.4 files_done=50 resolved=377 errors=1441 current=packages/babel-core/src/gensync-utils/async.ts
+[2026-09-17T21:32:44Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=124.8 files_done=51 resolved=380 errors=1458 current=packages/babel-plugin-transform-typescript/test/fixtures/namespace/alias/input.ts
+[2026-09-17T21:34:28Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=126.5 files_done=53 resolved=385 errors=1479 current=packages/babel-helper-module-imports/src/is-module.ts
+[2026-09-17T21:35:37Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=127.6 files_done=55 resolved=393 errors=1493 current=packages/babel-helper-validator-identifier/src/keyword.ts
+[2026-09-17T21:36:11Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=128.2 files_done=57 resolved=393 errors=1500 current=packages/babel-helper-split-export-declaration/src/index.ts
+[2026-09-17T21:37:10Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=129.2 files_done=58 resolved=395 errors=1512 current=packages/babel-types/src/converters/toStatement.ts
+[2026-09-17T21:40:46Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=132.8 files_done=60 resolved=397 errors=1556 current=packages/babel-helper-validator-identifier/src/identifier.ts
+[2026-09-17T21:43:18Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=135.3 files_done=62 resolved=413 errors=1587 current=packages/babel-core/src/transformation/file/merge-map.ts
+[2026-09-17T21:44:27Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=136.5 files_done=63 resolved=425 errors=1601 current=packages/babel-helper-module-transforms/src/rewrite-this.ts
+[2026-09-17T21:52:19Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=144.4 files_done=65 resolved=439 errors=1697 current=packages/babel-core/src/config/pattern-to-regex.ts
+[2026-09-17T21:55:55Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=147.9 files_done=67 resolved=444 errors=1741 current=packages/babel-types/src/constants/index.ts
+[2026-09-17T21:58:12Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=150.2 files_done=69 resolved=448 errors=1769 current=packages/babel-types/src/definitions/utils.ts
+[2026-09-17T22:00:14Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=152.3 files_done=70 resolved=472 errors=1794 current=packages/babel-preset-env/src/index.ts
+[2026-09-17T22:01:57Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=154.0 files_done=71 resolved=511 errors=1815 current=packages/babel-parser/test/fixtures/typescript/type-arguments/new/input.ts
+[2026-09-17T22:04:30Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=156.5 files_done=74 resolved=528 errors=1846 current=packages/babel-traverse/src/path/modification.ts
+[2026-09-17T22:10:09Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=162.2 files_done=75 resolved=538 errors=1915 current=packages/babel-types/src/utils/react/cleanJSXElementLiteralChild.ts
+[2026-09-17T22:11:57Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=164.0 files_done=78 resolved=558 errors=1937 current=packages/babel-preset-env/src/polyfills/regenerator.ts
+[2026-09-17T22:12:31Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=164.6 files_done=79 resolved=560 errors=1944 current=packages/babel-core/src/config/files/package.ts
+[2026-09-17T22:13:06Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=165.1 files_done=81 resolved=565 errors=1951 current=packages/babel-traverse/src/context.ts
+[2026-09-17T22:14:14Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=166.3 files_done=82 resolved=571 errors=1965 current=packages/babel-types/src/definitions/index.ts
+[2026-09-17T22:14:53Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=166.9 files_done=83 resolved=576 errors=1973 current=packages/babel-core/src/config/validation/plugins.ts
+[2026-09-17T22:15:48Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=167.8 files_done=85 resolved=582 errors=1984 current=packages/babel-code-frame/src/index.ts
+[2026-09-17T22:16:52Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=168.9 files_done=86 resolved=601 errors=1997 current=packages/babel-types/src/validators/isValidIdentifier.ts
+[2026-09-17T22:17:37Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=169.6 files_done=88 resolved=604 errors=2006 current=packages/babel-types/src/builders/builder.ts
+[2026-09-17T22:18:36Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=170.6 files_done=91 resolved=618 errors=2018 current=packages/babel-core/src/config/files/module-types.ts
+[2026-09-17T22:19:30Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=171.5 files_done=92 resolved=618 errors=2029 current=packages/babel-helper-create-class-features-plugin/src/features.ts
+[2026-09-17T22:23:12Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=175.2 files_done=93 resolved=620 errors=2074 current=packages/babel-core/src/config/helpers/config-api.ts
+[2026-09-17T22:24:06Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=176.1 files_done=94 resolved=625 errors=2085 current=packages/babel-types/src/definitions/misc.ts
+[2026-09-17T22:26:14Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=178.3 files_done=96 resolved=630 errors=2111 current=packages/babel-types/src/modifications/prependToMemberExpression.ts
+[2026-09-17T22:27:22Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=179.4 files_done=98 resolved=640 errors=2125 current=packages/babel-plugin-proposal-optional-chaining/test/fixtures/transparent-expr-wrappers/ts-as-function-call-loose/input.ts
+[2026-09-17T22:28:44Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=180.8 files_done=104 resolved=647 errors=2141 current=packages/babel-types/src/modifications/flow/removeTypeDuplicates.ts
+[2026-09-17T22:29:23Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=181.4 files_done=105 resolved=656 errors=2149 current=packages/babel-traverse/src/path/removal.ts
+[2026-09-17T22:30:32Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=182.6 files_done=106 resolved=661 errors=2163 current=packages/babel-core/src/config/resolve-targets-browser.ts
+[2026-09-17T22:31:06Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=183.1 files_done=108 resolved=662 errors=2170 current=packages/babel-core/src/config/item.ts
+[2026-09-17T22:31:43Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=183.7 files_done=112 resolved=668 errors=2177 current=packages/babel-helper-optimise-call-expression/src/index.ts
+[2026-09-17T22:32:52Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=184.9 files_done=113 resolved=668 errors=2191 current=packages/babel-core/src/transformation/file/generate.ts
+[2026-09-17T22:33:46Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=185.8 files_done=116 resolved=673 errors=2202 current=packages/babel-types/src/modifications/typescript/removeTypeDuplicates.ts
+[2026-09-17T22:35:05Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=187.1 files_done=118 resolved=692 errors=2218 current=packages/babel-types/src/converters/toIdentifier.ts
+[2026-09-17T22:35:44Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=187.8 files_done=120 resolved=694 errors=2226 current=packages/babel-parser/test/fixtures/typescript/type-arguments/call-optional-chain/input.ts
+[2026-09-17T22:36:14Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=188.3 files_done=123 resolved=695 errors=2232 current=packages/babel-plugin-transform-runtime/src/get-runtime-path/index.ts
+[2026-09-17T22:37:08Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=189.2 files_done=125 resolved=702 errors=2243 current=packages/babel-types/src/builders/flow/createTypeAnnotationBasedOnTypeof.ts
+[2026-09-17T22:38:02Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=190.1 files_done=126 resolved=702 errors=2254 current=packages/babel-core/src/transform-file-browser.ts
+[2026-09-17T22:38:32Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=190.6 files_done=129 resolved=704 errors=2260 current=packages/babel-types/src/validators/is.ts
+[2026-09-17T22:39:07Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=191.1 files_done=131 resolved=704 errors=2267 current=packages/babel-template/src/string.ts
+[2026-09-17T22:39:46Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=191.8 files_done=134 resolved=713 errors=2275 current=packages/babel-core/src/parse.ts
+[2026-09-17T22:40:50Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=192.9 files_done=136 resolved=713 errors=2288 current=packages/babel-parser/test/fixtures/typescript/cast/false-positive/input.ts
+[2026-09-17T22:41:21Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=193.4 files_done=140 resolved=721 errors=2294 current=packages/babel-types/src/validators/matchesPattern.ts
+[2026-09-17T22:42:01Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=194.0 files_done=141 resolved=722 errors=2302 current=packages/babel-helper-create-class-features-plugin/test/fixtures/plugin-proposal-decorators/ignore-abstract-methods/exec.ts
+[2026-09-17T22:42:55Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=195.0 files_done=144 resolved=725 errors=2313 current=packages/babel-types/src/validators/isBinding.ts
+[2026-09-17T22:43:35Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=195.6 files_done=148 resolved=728 errors=2321 current=packages/babel-helper-create-regexp-features-plugin/src/util.ts
+[2026-09-17T22:44:26Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=196.5 files_done=150 resolved=736 errors=2331 current=packages/babel-types/src/validators/isValidES3Identifier.ts
+[2026-09-17T22:45:02Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=197.1 files_done=155 resolved=744 errors=2338 current=packages/babel-core/src/transform.ts
+[2026-09-17T22:45:37Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=197.6 files_done=159 resolved=746 errors=2345 current=packages/babel-types/src/validators/isScope.ts
+[2026-09-17T22:46:11Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=198.2 files_done=160 resolved=746 errors=2352 current=packages/babel-template/src/index.ts
+[2026-09-17T22:46:46Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=198.8 files_done=163 resolved=748 errors=2359 current=packages/babel-types/src/modifications/removeProperties.ts
+[2026-09-17T22:47:40Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=199.7 files_done=167 resolved=755 errors=2370 current=packages/babel-generator/src/source-map.ts
+[2026-09-17T22:48:23Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=200.4 files_done=175 resolved=762 errors=2378 current=packages/babel-plugin-transform-spread/test/fixtures/call-context/flow-type-cast/input.ts
+[2026-09-17T22:48:55Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=200.9 files_done=184 resolved=766 errors=2384 current=packages/babel-parser/test/fixtures/typescript/optional-chaining/type-arguments/input.ts
+[2026-09-17T22:49:26Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=201.5 files_done=188 resolved=766 errors=2390 current=packages/babel-parser/test/fixtures/typescript/type-arguments/empty-function/input.ts
+[2026-09-17T22:50:04Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=202.1 files_done=194 resolved=767 errors=2397 current=packages/babel-core/src/config/files/index-browser.ts
+[2026-09-17T22:50:37Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=202.6 files_done=201 resolved=772 errors=2403 current=packages/babel-types/src/comments/inheritInnerComments.ts
+[2026-09-17T22:51:08Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=203.2 files_done=211 resolved=773 errors=2409 current=packages/babel-types/src/builders/typescript/createTSUnionType.ts
+[2026-09-17T22:51:49Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=203.8 files_done=216 resolved=774 errors=2417 current=packages/babel-plugin-transform-typescript/test/fixtures/type-arguments/new/input.ts
+[2026-09-17T22:52:25Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=204.5 files_done=224 resolved=776 errors=2424 current=packages/babel-types/src/asserts/assertNode.ts
+[2026-09-17T22:52:58Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=205.0 files_done=237 resolved=778 errors=2430 current=packages/babel-parser/test/fixtures/typescript/cast/parameter-typecast/input.ts
+[2026-09-17T22:53:34Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=205.6 files_done=246 resolved=778 errors=2436 current=packages/babel-types/src/comments/addComment.ts
+[2026-09-17T22:54:05Z] [iter=20] HEARTBEAT target_type=call_site elapsed_min=206.1 files_done=254 resolved=778 errors=2442 current=packages/babel-types/src/comments/inheritLeadingComments.ts
+[2026-09-17T22:54:11Z] [iter=20] Target type resolved target_type=call_site resolved=778 errors=2443 secs=12069 mem_mb=2786 MB
+[2026-09-17T22:54:11Z] [iter=20] Resolving target type target_type=import_statement count=5877
+[2026-09-17T22:54:36Z] [iter=20] HEARTBEAT target_type=import_statement elapsed_min=206.6 files_done=207 resolved=42 errors=0 current=packages/babel-parser/test/fixtures/esprima/es2015-import-declaration/import-named-specifiers/input.js
+[2026-09-17T22:54:55Z] [iter=20] CHECKPOINT TRIGGERED elapsed_min=206.9 files_completed=6470 new_files_this_iter=500 mem_mb=2790 MB
+[2026-09-17T22:54:55Z] [iter=20] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/b2376757d7a42c6785b24091144ef7f00df7d436.nq.gz triples=335923
+[2026-09-17T22:55:03Z] [iter=20] Checkpoint written, exiting with code 7
+[2026-09-17T22:55:03Z] [iter=20] PHASE END: enrich (checkpointed) elapsed_s=12417 elapsed_min=206.9 files_completed=6470
